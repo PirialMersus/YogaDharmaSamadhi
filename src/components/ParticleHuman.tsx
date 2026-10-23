@@ -1,15 +1,16 @@
 import { useRef, useMemo, useEffect, useState } from 'react'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
-import { easeInOutCubic, createParticleTexture } from '../geometry/humanShapes'
+import { createParticleTexture } from '../geometry/humanShapes'
 import { POSE_CYCLE, type PoseName } from '../geometry/poses'
-import { getAssetUrl } from '../utils/assetPath'
+import { loadParticlePoseData, getCachedParticlePoseData, preloadPoseAssets } from '../services/poseAssetLoader'
 
 interface ParticleHumanProps {
   currentPose: PoseName
   isTransitioning: boolean
   transitionProgress: number
   previousPose: PoseName
+  onPoseReady?: () => void
 }
 
 const STATIC_PARTICLE_COUNT = 18000
@@ -21,81 +22,48 @@ const ACTIVE_PARTICLE_OPACITY = 1.0
 const RESTING_PARTICLE_SIZE = 0.015
 const ACTIVE_PARTICLE_SIZE = 0.024
 
-const POSE_SCALE_FACTORS: Partial<Record<PoseName, number>> = {
-  tadasana: 0.92,
-  sirsasana: 0.90,
-  sarvangasana: 0.90,
-  adho_mukha_vrksasana: 0.80,
-  pincha_mayurasana: 0.84,
-  virabhadrasana_i: 0.90,
+function easeInOutCubic(x: number): number {
+  return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2
 }
-
-type PoseBufferMap = Record<
-  PoseName,
-  { readonly positions: Float32Array; readonly colors: Float32Array }
->
-
-interface ParticleMetadataRecord {
-  posOffset: number
-  posCount: number
-  colOffset: number
-  colCount: number
-}
-
-type ParticleMetadata = Record<string, ParticleMetadataRecord>
 
 export function ParticleHuman({
   currentPose,
   isTransitioning,
   transitionProgress,
   previousPose,
+  onPoseReady,
 }: ParticleHumanProps) {
-  const [bakedData, setBakedData] = useState<PoseBufferMap | null>(null)
+  const loadedParticlesMapRef = useRef<Map<PoseName, { positions: Float32Array; colors: Float32Array }>>(new Map())
+  const [, setRevision] = useState(0)
 
   useEffect(() => {
-    let isMounted = true
+    let isCancelled = false
 
-    Promise.all([
-      fetch(getAssetUrl('/models/poses_baked_meta.json?t=' + Date.now()), { cache: 'no-store' }).then((response) => response.json()),
-      fetch(getAssetUrl('/models/poses_baked.bin?t=' + Date.now()), { cache: 'no-store' }).then((response) => response.arrayBuffer()),
-    ])
-      .then(([metaData, binaryBuffer]: [ParticleMetadata, ArrayBuffer]) => {
-        if (!isMounted) return
-        const map = {} as PoseBufferMap
-        for (const name of POSE_CYCLE) {
-          const record = metaData[name]
-          if (record) {
-            let finalPositions: Float32Array
-            const customScale = POSE_SCALE_FACTORS[name]
+    const nextIndex = (POSE_CYCLE.indexOf(currentPose) + 1) % POSE_CYCLE.length
+    const nextPoseName = POSE_CYCLE[nextIndex]
+    preloadPoseAssets(nextPoseName)
 
-            if (customScale !== undefined) {
-              finalPositions = new Float32Array(record.posCount)
-              const rawPositions = new Float32Array(binaryBuffer, record.posOffset * 4, record.posCount)
-              for (let coordIndex = 0; coordIndex < record.posCount; coordIndex += 3) {
-                finalPositions[coordIndex] = rawPositions[coordIndex] * customScale
-                finalPositions[coordIndex + 1] = rawPositions[coordIndex + 1] * customScale
-                finalPositions[coordIndex + 2] = rawPositions[coordIndex + 2] * customScale
-              }
-            } else {
-              finalPositions = new Float32Array(binaryBuffer, record.posOffset * 4, record.posCount)
-            }
+    loadParticlePoseData(currentPose).then((data) => {
+      if (isCancelled) return
+      loadedParticlesMapRef.current.set(currentPose, data)
+      setRevision((prev) => prev + 1)
+      if (onPoseReady) {
+        onPoseReady()
+      }
+    })
 
-            map[name] = {
-              positions: finalPositions,
-              colors: new Float32Array(binaryBuffer, record.colOffset * 4, record.colCount),
-            }
-          }
-        }
-        setBakedData(map)
+    if (previousPose && !loadedParticlesMapRef.current.has(previousPose)) {
+      loadParticlePoseData(previousPose).then((data) => {
+        if (isCancelled) return
+        loadedParticlesMapRef.current.set(previousPose, data)
+        setRevision((prev) => prev + 1)
       })
-      .catch((error) => {
-        console.warn('Error loading baked particles:', error)
-      })
+    }
 
     return () => {
-      isMounted = false
+      isCancelled = true
     }
-  }, [])
+  }, [currentPose, previousPose, onPoseReady])
 
   const workingPositions = useMemo(
     () => new Float32Array(STATIC_PARTICLE_COUNT * 3),
@@ -153,51 +121,39 @@ export function ParticleHuman({
   )
 
   useEffect(() => {
-    if (!bakedData) return
-    const initialPose = bakedData[currentPose] ?? bakedData['tadasana']
-    if (initialPose && initialPose.positions.length >= STATIC_PARTICLE_COUNT * 3) {
-      workingPositions.set(initialPose.positions.subarray(0, STATIC_PARTICLE_COUNT * 3))
-      workingColors.set(initialPose.colors.subarray(0, STATIC_PARTICLE_COUNT * 3))
+    const poseData = loadedParticlesMapRef.current.get(currentPose) || getCachedParticlePoseData(currentPose)
+    if (poseData && poseData.positions.length >= STATIC_PARTICLE_COUNT * 3) {
+      workingPositions.set(poseData.positions.subarray(0, STATIC_PARTICLE_COUNT * 3))
+      workingColors.set(poseData.colors.subarray(0, STATIC_PARTICLE_COUNT * 3))
 
       if (geometryRef.current) {
-        const positionAttribute = geometryRef.current.getAttribute(
-          'position',
-        ) as THREE.BufferAttribute
-        const colorAttribute = geometryRef.current.getAttribute(
-          'color',
-        ) as THREE.BufferAttribute
+        const positionAttribute = geometryRef.current.getAttribute('position') as THREE.BufferAttribute
+        const colorAttribute = geometryRef.current.getAttribute('color') as THREE.BufferAttribute
         positionAttribute.needsUpdate = true
         colorAttribute.needsUpdate = true
       }
     }
-  }, [bakedData, currentPose, workingPositions, workingColors])
+  }, [currentPose, workingPositions, workingColors])
 
   useFrame((state) => {
-    if (!geometryRef.current || !bakedData) return
+    if (!geometryRef.current) return
 
-    const sourcePose = bakedData[previousPose] ?? bakedData['tadasana']
-    const targetPose = bakedData[currentPose] ?? bakedData['tadasana']
-    if (!sourcePose || !targetPose) return
+    const sourceData = loadedParticlesMapRef.current.get(previousPose) || loadedParticlesMapRef.current.get(currentPose) || getCachedParticlePoseData(previousPose) || getCachedParticlePoseData(currentPose)
+    const targetData = loadedParticlesMapRef.current.get(currentPose) || getCachedParticlePoseData(currentPose) || sourceData
 
-    let transitionActivityFactor = 0.0
+    if (!targetData) return
+    const effectiveSource = sourceData || targetData
+
+    let transitionActivityFactor = 0
     if (isTransitioning) {
+      const appearanceNormalizedProgress = Math.min(Math.max(transitionProgress / 0.25, 0), 1)
+      const disappearanceNormalizedProgress = Math.min(Math.max((transitionProgress - 0.75) / 0.25, 0), 1)
       if (transitionProgress < 0.25) {
-        const appearanceNormalizedProgress = transitionProgress / 0.25
-        transitionActivityFactor =
-          appearanceNormalizedProgress *
-          appearanceNormalizedProgress *
-          (3.0 - 2.0 * appearanceNormalizedProgress)
-      } else if (transitionProgress <= 0.72) {
+        transitionActivityFactor = appearanceNormalizedProgress * appearanceNormalizedProgress * (3.0 - 2.0 * appearanceNormalizedProgress)
+      } else if (transitionProgress < 0.75) {
         transitionActivityFactor = 1.0
       } else {
-        const disappearanceNormalizedProgress = Math.max(
-          0.0,
-          (1.0 - transitionProgress) / 0.28,
-        )
-        transitionActivityFactor =
-          disappearanceNormalizedProgress *
-          disappearanceNormalizedProgress *
-          (3.0 - 2.0 * disappearanceNormalizedProgress)
+        transitionActivityFactor = 1.0 - disappearanceNormalizedProgress * disappearanceNormalizedProgress * (3.0 - 2.0 * disappearanceNormalizedProgress)
       }
     }
 
@@ -209,12 +165,8 @@ export function ParticleHuman({
       (ACTIVE_PARTICLE_SIZE - RESTING_PARTICLE_SIZE) * transitionActivityFactor
 
     const time = state.clock.getElapsedTime()
-    const positionAttribute = geometryRef.current.getAttribute(
-      'position',
-    ) as THREE.BufferAttribute
-    const colorAttribute = geometryRef.current.getAttribute(
-      'color',
-    ) as THREE.BufferAttribute
+    const positionAttribute = geometryRef.current.getAttribute('position') as THREE.BufferAttribute
+    const colorAttribute = geometryRef.current.getAttribute('color') as THREE.BufferAttribute
 
     const easedT = easeInOutCubic(Math.min(Math.max(transitionProgress, 0), 1.0))
     const transitionPulse = isTransitioning ? Math.sin(transitionProgress * Math.PI) : 0
@@ -231,13 +183,13 @@ export function ParticleHuman({
       let currentZ: number
 
       if (isBodyParticle) {
-        const sourceX = sourcePose.positions[coord]
-        const sourceY = sourcePose.positions[coord + 1]
-        const sourceZ = sourcePose.positions[coord + 2]
+        const sourceX = effectiveSource.positions[coord]
+        const sourceY = effectiveSource.positions[coord + 1]
+        const sourceZ = effectiveSource.positions[coord + 2]
 
-        const targetX = targetPose.positions[coord]
-        const targetY = targetPose.positions[coord + 1]
-        const targetZ = targetPose.positions[coord + 2]
+        const targetX = targetData.positions[coord]
+        const targetY = targetData.positions[coord + 1]
+        const targetZ = targetData.positions[coord + 2]
 
         if (isTransitioning) {
           currentX = sourceX + (targetX - sourceX) * easedT
@@ -295,13 +247,13 @@ export function ParticleHuman({
       let baseColorB: number
 
       if (isBodyParticle) {
-        const sourceR = sourcePose.colors[coord]
-        const sourceG = sourcePose.colors[coord + 1]
-        const sourceB = sourcePose.colors[coord + 2]
+        const sourceR = effectiveSource.colors[coord]
+        const sourceG = effectiveSource.colors[coord + 1]
+        const sourceB = effectiveSource.colors[coord + 2]
 
-        const targetR = targetPose.colors[coord]
-        const targetG = targetPose.colors[coord + 1]
-        const targetB = targetPose.colors[coord + 2]
+        const targetR = targetData.colors[coord]
+        const targetG = targetData.colors[coord + 1]
+        const targetB = targetData.colors[coord + 2]
 
         if (isTransitioning) {
           baseColorR = (sourceR + (targetR - sourceR) * easedT) * flicker * energyMultiplier
@@ -339,8 +291,6 @@ export function ParticleHuman({
       particleMaterialRef.current.size = currentParticleSize
     }
   })
-
-  if (!bakedData) return null
 
   return (
     <points ref={pointsRef}>

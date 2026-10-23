@@ -1,0 +1,810 @@
+{
+  "particles": {
+    "tadasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "tadasana.bin"
+    },
+    "vriksasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "vriksasana.bin"
+    },
+    "garudasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "garudasana.bin"
+    },
+    "utkatasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "utkatasana.bin"
+    },
+    "trikonasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "trikonasana.bin"
+    },
+    "parivrtta_trikonasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "parivrtta_trikonasana.bin"
+    },
+    "parsvakonasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "parsvakonasana.bin"
+    },
+    "virabhadrasana_i": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "virabhadrasana_i.bin"
+    },
+    "virabhadrasana_ii": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "virabhadrasana_ii.bin"
+    },
+    "virabhadrasana_iii": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "virabhadrasana_iii.bin"
+    },
+    "ardha_chandrasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "ardha_chandrasana.bin"
+    },
+    "natarajasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "natarajasana.bin"
+    },
+    "prasarita_padottanasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "prasarita_padottanasana.bin"
+    },
+    "parsvottanasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "parsvottanasana.bin"
+    },
+    "padangusthasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "padangusthasana.bin"
+    },
+    "uttanasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "uttanasana.bin"
+    },
+    "malasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "malasana.bin"
+    },
+    "pasasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "pasasana.bin"
+    },
+    "adho_mukha_svanasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "adho_mukha_svanasana.bin"
+    },
+    "vasisthasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "vasisthasana.bin"
+    },
+    "purvottanasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "purvottanasana.bin"
+    },
+    "marjaryasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "marjaryasana.bin"
+    },
+    "bitilasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "bitilasana.bin"
+    },
+    "bujangasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "bujangasana.bin"
+    },
+    "salabhasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "salabhasana.bin"
+    },
+    "bhekasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "bhekasana.bin"
+    },
+    "dhanurasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "dhanurasana.bin"
+    },
+    "urdhva_dhanurasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "urdhva_dhanurasana.bin"
+    },
+    "kapotasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "kapotasana.bin"
+    },
+    "setu_bandhasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "setu_bandhasana.bin"
+    },
+    "virasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "virasana.bin"
+    },
+    "supta_virasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "supta_virasana.bin"
+    },
+    "parighasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "parighasana.bin"
+    },
+    "navasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "navasana.bin"
+    },
+    "bakasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "bakasana.bin"
+    },
+    "bhujapidasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "bhujapidasana.bin"
+    },
+    "kukkutasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "kukkutasana.bin"
+    },
+    "lolasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "lolasana.bin"
+    },
+    "mayurasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "mayurasana.bin"
+    },
+    "astavakrasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "astavakrasana.bin"
+    },
+    "tittibhasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "tittibhasana.bin"
+    },
+    "pincha_mayurasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "pincha_mayurasana.bin"
+    },
+    "adho_mukha_vrksasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "adho_mukha_vrksasana.bin"
+    },
+    "dandasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "dandasana.bin"
+    },
+    "gomukhasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "gomukhasana.bin"
+    },
+    "sukhasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "sukhasana.bin"
+    },
+    "vajrasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "vajrasana.bin"
+    },
+    "bharadvajasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "bharadvajasana.bin"
+    },
+    "marichyasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "marichyasana.bin"
+    },
+    "janu_sirsasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "janu_sirsasana.bin"
+    },
+    "krounchasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "krounchasana.bin"
+    },
+    "paschimottanasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "paschimottanasana.bin"
+    },
+    "upavistha_konasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "upavistha_konasana.bin"
+    },
+    "baddha_konasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "baddha_konasana.bin"
+    },
+    "kurmasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "kurmasana.bin"
+    },
+    "lotus": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "lotus.bin"
+    },
+    "garbha_pindasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "garbha_pindasana.bin"
+    },
+    "matsyasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "matsyasana.bin"
+    },
+    "supta_padangusthasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "supta_padangusthasana.bin"
+    },
+    "anantasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "anantasana.bin"
+    },
+    "supta_baddha_konasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "supta_baddha_konasana.bin"
+    },
+    "viparita_karani": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "viparita_karani.bin"
+    },
+    "sirsasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "sirsasana.bin"
+    },
+    "sarvangasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "sarvangasana.bin"
+    },
+    "halasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "halasana.bin"
+    },
+    "karnapidasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "karnapidasana.bin"
+    },
+    "savasana": {
+      "posCount": 54000,
+      "colCount": 54000,
+      "file": "savasana.bin"
+    }
+  },
+  "sculpts": {
+    "tadasana": {
+      "posCount": 36918,
+      "normCount": 36918,
+      "idxCount": 61863,
+      "height": 1.7502,
+      "file": "tadasana.bin"
+    },
+    "vriksasana": {
+      "posCount": 402312,
+      "normCount": 402312,
+      "idxCount": 654033,
+      "height": 1.58,
+      "file": "vriksasana.bin"
+    },
+    "garudasana": {
+      "posCount": 37071,
+      "normCount": 37071,
+      "idxCount": 62166,
+      "height": 1.6447,
+      "file": "garudasana.bin"
+    },
+    "utkatasana": {
+      "posCount": 37302,
+      "normCount": 37302,
+      "idxCount": 62169,
+      "height": 1.5519,
+      "file": "utkatasana.bin"
+    },
+    "trikonasana": {
+      "posCount": 974913,
+      "normCount": 974913,
+      "idxCount": 1658796,
+      "height": 1.5492,
+      "file": "trikonasana.bin"
+    },
+    "parivrtta_trikonasana": {
+      "posCount": 37584,
+      "normCount": 37584,
+      "idxCount": 62346,
+      "height": 1.5218,
+      "file": "parivrtta_trikonasana.bin"
+    },
+    "parsvakonasana": {
+      "posCount": 37320,
+      "normCount": 37320,
+      "idxCount": 62409,
+      "height": 1.1846,
+      "file": "parsvakonasana.bin"
+    },
+    "virabhadrasana_i": {
+      "posCount": 36963,
+      "normCount": 36963,
+      "idxCount": 62217,
+      "height": 1.7367,
+      "file": "virabhadrasana_i.bin"
+    },
+    "virabhadrasana_ii": {
+      "posCount": 37875,
+      "normCount": 37875,
+      "idxCount": 62262,
+      "height": 1.3219,
+      "file": "virabhadrasana_ii.bin"
+    },
+    "virabhadrasana_iii": {
+      "posCount": 36918,
+      "normCount": 36918,
+      "idxCount": 62169,
+      "height": 1.1076,
+      "file": "virabhadrasana_iii.bin"
+    },
+    "ardha_chandrasana": {
+      "posCount": 37308,
+      "normCount": 37308,
+      "idxCount": 62331,
+      "height": 1.5826,
+      "file": "ardha_chandrasana.bin"
+    },
+    "natarajasana": {
+      "posCount": 170349,
+      "normCount": 170349,
+      "idxCount": 321204,
+      "height": 1.6687,
+      "file": "natarajasana.bin"
+    },
+    "prasarita_padottanasana": {
+      "posCount": 38013,
+      "normCount": 38013,
+      "idxCount": 62496,
+      "height": 0.7434,
+      "file": "prasarita_padottanasana.bin"
+    },
+    "parsvottanasana": {
+      "posCount": 37917,
+      "normCount": 37917,
+      "idxCount": 62319,
+      "height": 0.8574,
+      "file": "parsvottanasana.bin"
+    },
+    "padangusthasana": {
+      "posCount": 38505,
+      "normCount": 38505,
+      "idxCount": 62832,
+      "height": 1.0087,
+      "file": "padangusthasana.bin"
+    },
+    "uttanasana": {
+      "posCount": 37302,
+      "normCount": 37302,
+      "idxCount": 62391,
+      "height": 1.0011,
+      "file": "uttanasana.bin"
+    },
+    "malasana": {
+      "posCount": 37737,
+      "normCount": 37737,
+      "idxCount": 61941,
+      "height": 0.9187,
+      "file": "malasana.bin"
+    },
+    "pasasana": {
+      "posCount": 37686,
+      "normCount": 37686,
+      "idxCount": 61938,
+      "height": 0.807,
+      "file": "pasasana.bin"
+    },
+    "adho_mukha_svanasana": {
+      "posCount": 36951,
+      "normCount": 36951,
+      "idxCount": 62169,
+      "height": 0.8229,
+      "file": "adho_mukha_svanasana.bin"
+    },
+    "vasisthasana": {
+      "posCount": 37641,
+      "normCount": 37641,
+      "idxCount": 62250,
+      "height": 1.384,
+      "file": "vasisthasana.bin"
+    },
+    "purvottanasana": {
+      "posCount": 38109,
+      "normCount": 38109,
+      "idxCount": 62376,
+      "height": 0.7046,
+      "file": "purvottanasana.bin"
+    },
+    "marjaryasana": {
+      "posCount": 36918,
+      "normCount": 36918,
+      "idxCount": 62169,
+      "height": 0.6508,
+      "file": "marjaryasana.bin"
+    },
+    "bitilasana": {
+      "posCount": 38226,
+      "normCount": 38226,
+      "idxCount": 62244,
+      "height": 0.8013,
+      "file": "bitilasana.bin"
+    },
+    "bujangasana": {
+      "posCount": 39234,
+      "normCount": 39234,
+      "idxCount": 63171,
+      "height": 0.6808,
+      "file": "bujangasana.bin"
+    },
+    "salabhasana": {
+      "posCount": 36918,
+      "normCount": 36918,
+      "idxCount": 62172,
+      "height": 0.4182,
+      "file": "salabhasana.bin"
+    },
+    "bhekasana": {
+      "posCount": 37677,
+      "normCount": 37677,
+      "idxCount": 62079,
+      "height": 0.4434,
+      "file": "bhekasana.bin"
+    },
+    "dhanurasana": {
+      "posCount": 36714,
+      "normCount": 36714,
+      "idxCount": 61719,
+      "height": 0.7861,
+      "file": "dhanurasana.bin"
+    },
+    "urdhva_dhanurasana": {
+      "posCount": 37554,
+      "normCount": 37554,
+      "idxCount": 62523,
+      "height": 0.8101,
+      "file": "urdhva_dhanurasana.bin"
+    },
+    "kapotasana": {
+      "posCount": 37170,
+      "normCount": 37170,
+      "idxCount": 62310,
+      "height": 0.5463,
+      "file": "kapotasana.bin"
+    },
+    "setu_bandhasana": {
+      "posCount": 39090,
+      "normCount": 39090,
+      "idxCount": 62400,
+      "height": 0.5545,
+      "file": "setu_bandhasana.bin"
+    },
+    "virasana": {
+      "posCount": 45924,
+      "normCount": 45924,
+      "idxCount": 68397,
+      "height": 0.943,
+      "file": "virasana.bin"
+    },
+    "supta_virasana": {
+      "posCount": 38136,
+      "normCount": 38136,
+      "idxCount": 61878,
+      "height": 0.4417,
+      "file": "supta_virasana.bin"
+    },
+    "parighasana": {
+      "posCount": 37245,
+      "normCount": 37245,
+      "idxCount": 62343,
+      "height": 1.2663,
+      "file": "parighasana.bin"
+    },
+    "navasana": {
+      "posCount": 36846,
+      "normCount": 36846,
+      "idxCount": 61950,
+      "height": 0.8966,
+      "file": "navasana.bin"
+    },
+    "bakasana": {
+      "posCount": 556251,
+      "normCount": 556251,
+      "idxCount": 956217,
+      "height": 0.8497,
+      "file": "bakasana.bin"
+    },
+    "bhujapidasana": {
+      "posCount": 37350,
+      "normCount": 37350,
+      "idxCount": 62271,
+      "height": 0.7461,
+      "file": "bhujapidasana.bin"
+    },
+    "kukkutasana": {
+      "posCount": 36951,
+      "normCount": 36951,
+      "idxCount": 62121,
+      "height": 0.7923,
+      "file": "kukkutasana.bin"
+    },
+    "lolasana": {
+      "posCount": 37791,
+      "normCount": 37791,
+      "idxCount": 62397,
+      "height": 0.7161,
+      "file": "lolasana.bin"
+    },
+    "mayurasana": {
+      "posCount": 37656,
+      "normCount": 37656,
+      "idxCount": 61980,
+      "height": 0.4274,
+      "file": "mayurasana.bin"
+    },
+    "astavakrasana": {
+      "posCount": 37383,
+      "normCount": 37383,
+      "idxCount": 62274,
+      "height": 0.4924,
+      "file": "astavakrasana.bin"
+    },
+    "tittibhasana": {
+      "posCount": 37845,
+      "normCount": 37845,
+      "idxCount": 61794,
+      "height": 0.7324,
+      "file": "tittibhasana.bin"
+    },
+    "pincha_mayurasana": {
+      "posCount": 39876,
+      "normCount": 39876,
+      "idxCount": 65319,
+      "height": 1.7664,
+      "file": "pincha_mayurasana.bin"
+    },
+    "adho_mukha_vrksasana": {
+      "posCount": 38952,
+      "normCount": 38952,
+      "idxCount": 62436,
+      "height": 2.0866,
+      "file": "adho_mukha_vrksasana.bin"
+    },
+    "dandasana": {
+      "posCount": 38250,
+      "normCount": 38250,
+      "idxCount": 62082,
+      "height": 0.8672,
+      "file": "dandasana.bin"
+    },
+    "gomukhasana": {
+      "posCount": 36912,
+      "normCount": 36912,
+      "idxCount": 62160,
+      "height": 0.936,
+      "file": "gomukhasana.bin"
+    },
+    "sukhasana": {
+      "posCount": 36879,
+      "normCount": 36879,
+      "idxCount": 61965,
+      "height": 0.8208,
+      "file": "sukhasana.bin"
+    },
+    "vajrasana": {
+      "posCount": 37584,
+      "normCount": 37584,
+      "idxCount": 62328,
+      "height": 0.9194,
+      "file": "vajrasana.bin"
+    },
+    "bharadvajasana": {
+      "posCount": 38745,
+      "normCount": 38745,
+      "idxCount": 62811,
+      "height": 0.8783,
+      "file": "bharadvajasana.bin"
+    },
+    "marichyasana": {
+      "posCount": 39897,
+      "normCount": 39897,
+      "idxCount": 62799,
+      "height": 0.7851,
+      "file": "marichyasana.bin"
+    },
+    "janu_sirsasana": {
+      "posCount": 37356,
+      "normCount": 37356,
+      "idxCount": 62256,
+      "height": 0.3068,
+      "file": "janu_sirsasana.bin"
+    },
+    "krounchasana": {
+      "posCount": 37569,
+      "normCount": 37569,
+      "idxCount": 62403,
+      "height": 1.0922,
+      "file": "krounchasana.bin"
+    },
+    "paschimottanasana": {
+      "posCount": 45114,
+      "normCount": 45114,
+      "idxCount": 70722,
+      "height": 0.9346,
+      "file": "paschimottanasana.bin"
+    },
+    "upavistha_konasana": {
+      "posCount": 37044,
+      "normCount": 37044,
+      "idxCount": 62232,
+      "height": 0.6841,
+      "file": "upavistha_konasana.bin"
+    },
+    "baddha_konasana": {
+      "posCount": 36918,
+      "normCount": 36918,
+      "idxCount": 62166,
+      "height": 0.9205,
+      "file": "baddha_konasana.bin"
+    },
+    "kurmasana": {
+      "posCount": 37302,
+      "normCount": 37302,
+      "idxCount": 62349,
+      "height": 0.3141,
+      "file": "kurmasana.bin"
+    },
+    "lotus": {
+      "posCount": 140814,
+      "normCount": 140814,
+      "idxCount": 261960,
+      "height": 0.9797,
+      "file": "lotus.bin"
+    },
+    "garbha_pindasana": {
+      "posCount": 37014,
+      "normCount": 37014,
+      "idxCount": 62352,
+      "height": 0.6738,
+      "file": "garbha_pindasana.bin"
+    },
+    "matsyasana": {
+      "posCount": 37560,
+      "normCount": 37560,
+      "idxCount": 62334,
+      "height": 0.8076,
+      "file": "matsyasana.bin"
+    },
+    "supta_padangusthasana": {
+      "posCount": 38586,
+      "normCount": 38586,
+      "idxCount": 62451,
+      "height": 0.3759,
+      "file": "supta_padangusthasana.bin"
+    },
+    "anantasana": {
+      "posCount": 39264,
+      "normCount": 39264,
+      "idxCount": 62658,
+      "height": 1.0133,
+      "file": "anantasana.bin"
+    },
+    "supta_baddha_konasana": {
+      "posCount": 37023,
+      "normCount": 37023,
+      "idxCount": 62094,
+      "height": 0.4116,
+      "file": "supta_baddha_konasana.bin"
+    },
+    "viparita_karani": {
+      "posCount": 36975,
+      "normCount": 36975,
+      "idxCount": 62133,
+      "height": 1.1659,
+      "file": "viparita_karani.bin"
+    },
+    "sirsasana": {
+      "posCount": 38013,
+      "normCount": 38013,
+      "idxCount": 62481,
+      "height": 1.8329,
+      "file": "sirsasana.bin"
+    },
+    "sarvangasana": {
+      "posCount": 36933,
+      "normCount": 36933,
+      "idxCount": 62184,
+      "height": 1.6728,
+      "file": "sarvangasana.bin"
+    },
+    "halasana": {
+      "posCount": 36951,
+      "normCount": 36951,
+      "idxCount": 62187,
+      "height": 0.63,
+      "file": "halasana.bin"
+    },
+    "karnapidasana": {
+      "posCount": 37632,
+      "normCount": 37632,
+      "idxCount": 62211,
+      "height": 0.5412,
+      "file": "karnapidasana.bin"
+    },
+    "savasana": {
+      "posCount": 38100,
+      "normCount": 38100,
+      "idxCount": 61464,
+      "height": 0.202,
+      "file": "savasana.bin"
+    }
+  }
+}
