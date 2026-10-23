@@ -1,0 +1,163 @@
+[
+  {
+    "key": "garudasana",
+    "rus": "Гарудасана",
+    "uid": "7b72ad071e3245b4b22c68d3fcfbd271",
+    "name": "Yoga Pose - Garudasana",
+    "likes": 1
+  },
+  {
+    "key": "malasana",
+    "rus": "Маласана",
+    "uid": "6d23f3feaed64ac6abb4ee09ef81c66d",
+    "name": "Yoga Pose - Malasana",
+    "likes": 1
+  },
+  {
+    "key": "dandasana",
+    "rus": "Дандасана",
+    "uid": "827572e8f96c4c318ed722faee17565d",
+    "name": "Yoga Pose - Dandasana",
+    "likes": 1
+  },
+  {
+    "key": "janu_sirsasana",
+    "rus": "Джану Ширшасана",
+    "uid": "9648870b695f4218bbc649232b575b86",
+    "name": "Yoga Pose - Janu Sirsasana",
+    "likes": 1
+  },
+  {
+    "key": "marichyasana",
+    "rus": "Маричиасана",
+    "uid": "1848c34fe5914e1eb267ac34abe45829",
+    "name": "Yoga Pose - Marichyasana 3",
+    "likes": 1
+  },
+  {
+    "key": "upavistha_konasana",
+    "rus": "Упавиштха Конасана",
+    "uid": "c8d972fe235e4361ad7116a846ea2b4c",
+    "name": "Yoga pose Upavistha Konasana",
+    "likes": 2
+  },
+  {
+    "key": "prasarita_padottanasana",
+    "rus": "Прасарита Падоттанасана",
+    "uid": "4a6a4bc19ede4bf7b508d33669629077",
+    "name": "Yoga Pose Prasarita Padottanasana",
+    "likes": 10
+  },
+  {
+    "key": "parsvakonasana",
+    "rus": "Уттхита Паршваконасана",
+    "uid": "f9e0ff8980384719a322fb52ab4f5463",
+    "name": "Yoga Pose Parvritta Parsva Konasana",
+    "likes": 1
+  },
+  {
+    "key": "parighasana",
+    "rus": "Паригхасана",
+    "uid": "43c9fe07086940f9801d2050de8d0dc2",
+    "name": "Yoga Pose - Parighasana - locking pose",
+    "likes": 0
+  },
+  {
+    "key": "virasana",
+    "rus": "Вирасана",
+    "uid": "643b425eb7994c30afa04135b328df3f",
+    "name": "Yoga Pose Virasana",
+    "likes": 4
+  },
+  {
+    "key": "supta_virasana",
+    "rus": "Супта Вирасана",
+    "uid": "7c146f118b124f78be39326d09d9b096",
+    "name": "Yoga Pose Supta Virasana",
+    "likes": 0
+  },
+  {
+    "key": "supta_baddha_konasana",
+    "rus": "Супта Баддха Конасана",
+    "uid": "336ee07c1d2747a2b439d0fa72b979c3",
+    "name": "Yoga Pose Supta Baddha Konasana",
+    "likes": 25
+  },
+  {
+    "key": "supta_padangusthasana",
+    "rus": "Супта Падангуштхасана",
+    "uid": "012af9e2900a4133bdf4fd0019ab5b85",
+    "name": "Yoga Pose Supta Padangusthasana II",
+    "likes": 1
+  },
+  {
+    "key": "bhekasana",
+    "rus": "Бхекасана",
+    "uid": "56f77a6a84ca4dbfadf8a5489b53a1c1",
+    "name": "Yoga Pose -Bhekasana",
+    "likes": 1
+  },
+  {
+    "key": "kapotasana",
+    "rus": "Капотасана",
+    "uid": "e5ff64b61bbb4e378809a4a29881a7e2",
+    "name": "Yoga Pose - Kapotasana",
+    "likes": 1
+  },
+  {
+    "key": "kurmasana",
+    "rus": "Курмасана",
+    "uid": "6c935834ad5f419bb38b1ddf570445a7",
+    "name": "Yoga Pose Supta Kurmasana",
+    "likes": 2
+  },
+  {
+    "key": "tittibhasana",
+    "rus": "Титтибхасана",
+    "uid": "ccd408ccdbd741e59764d3fda9a675f5",
+    "name": "Yoga Pose: Tittibhasana",
+    "likes": 6
+  },
+  {
+    "key": "mayurasana",
+    "rus": "Маюрасана",
+    "uid": "f6b8167bd674482389a978e797eb25fe",
+    "name": "Yoga Pose Uttana Padma Mayurasana",
+    "likes": 4
+  },
+  {
+    "key": "anantasana",
+    "rus": "Анантасана",
+    "uid": "7bfa26ebc8f944cbb6bab3d842596ddc",
+    "name": "Anantasana",
+    "likes": 2
+  },
+  {
+    "key": "setu_bandhasana",
+    "rus": "Сету Бандхасана",
+    "uid": "df82d056fe19416e8513a7842c6fcd2e",
+    "name": "Yoga Pose Setu Bandha Sarvangasana",
+    "likes": 6
+  },
+  {
+    "key": "karnapidasana",
+    "rus": "Карнапидасана",
+    "uid": "1a7e19a7b5a6408f93f0ed2115fa50a3",
+    "name": "Yoga Pose - Karnapidasana",
+    "likes": 37
+  },
+  {
+    "key": "garbha_pindasana",
+    "rus": "Гарбха Пиндасана",
+    "uid": "39d67e03a0764505b6362cdf30fd5399",
+    "name": "Yoga Pose - Garbha Pindasana",
+    "likes": 7
+  },
+  {
+    "key": "bitilasana",
+    "rus": "Битиласана (Корова)",
+    "uid": "44ed1d3c39d74a05b7bf5688f21a926a",
+    "name": "Yoga Pose - Bitilasana - Cow Pose",
+    "likes": 22
+  }
+]

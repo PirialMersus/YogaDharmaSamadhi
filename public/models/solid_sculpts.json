@@ -1,0 +1,607 @@
+{
+  "poses": {
+    "tadasana": {
+      "posOffset": 0,
+      "posCount": 36918,
+      "normOffset": 147672,
+      "normCount": 36918,
+      "idxOffset": 295344,
+      "idxCount": 61863,
+      "height": 1.7502
+    },
+    "vriksasana": {
+      "posOffset": 542796,
+      "posCount": 402312,
+      "normOffset": 2152044,
+      "normCount": 402312,
+      "idxOffset": 3761292,
+      "idxCount": 654033,
+      "height": 1.58
+    },
+    "garudasana": {
+      "posOffset": 6377424,
+      "posCount": 37071,
+      "normOffset": 6525708,
+      "normCount": 37071,
+      "idxOffset": 6673992,
+      "idxCount": 62166,
+      "height": 1.6447
+    },
+    "utkatasana": {
+      "posOffset": 6922656,
+      "posCount": 37302,
+      "normOffset": 7071864,
+      "normCount": 37302,
+      "idxOffset": 7221072,
+      "idxCount": 62169,
+      "height": 1.5519
+    },
+    "trikonasana": {
+      "posOffset": 7469748,
+      "posCount": 974913,
+      "normOffset": 11369400,
+      "normCount": 974913,
+      "idxOffset": 15269052,
+      "idxCount": 1658796,
+      "height": 1.5492
+    },
+    "parivrtta_trikonasana": {
+      "posOffset": 21904236,
+      "posCount": 37584,
+      "normOffset": 22054572,
+      "normCount": 37584,
+      "idxOffset": 22204908,
+      "idxCount": 62346,
+      "height": 1.5218
+    },
+    "parsvakonasana": {
+      "posOffset": 22454292,
+      "posCount": 37320,
+      "normOffset": 22603572,
+      "normCount": 37320,
+      "idxOffset": 22752852,
+      "idxCount": 62409,
+      "height": 1.1846
+    },
+    "virabhadrasana_i": {
+      "posOffset": 23002488,
+      "posCount": 36963,
+      "normOffset": 23150340,
+      "normCount": 36963,
+      "idxOffset": 23298192,
+      "idxCount": 62217,
+      "height": 1.7367
+    },
+    "virabhadrasana_ii": {
+      "posOffset": 23547060,
+      "posCount": 37875,
+      "normOffset": 23698560,
+      "normCount": 37875,
+      "idxOffset": 23850060,
+      "idxCount": 62262,
+      "height": 1.3219
+    },
+    "virabhadrasana_iii": {
+      "posOffset": 24099108,
+      "posCount": 36918,
+      "normOffset": 24246780,
+      "normCount": 36918,
+      "idxOffset": 24394452,
+      "idxCount": 62169,
+      "height": 1.1076
+    },
+    "ardha_chandrasana": {
+      "posOffset": 24643128,
+      "posCount": 37308,
+      "normOffset": 24792360,
+      "normCount": 37308,
+      "idxOffset": 24941592,
+      "idxCount": 62331,
+      "height": 1.5826
+    },
+    "natarajasana": {
+      "posOffset": 25190916,
+      "posCount": 170349,
+      "normOffset": 25872312,
+      "normCount": 170349,
+      "idxOffset": 26553708,
+      "idxCount": 321204,
+      "height": 1.6687
+    },
+    "prasarita_padottanasana": {
+      "posOffset": 27838524,
+      "posCount": 38013,
+      "normOffset": 27990576,
+      "normCount": 38013,
+      "idxOffset": 28142628,
+      "idxCount": 62496,
+      "height": 0.7434
+    },
+    "parsvottanasana": {
+      "posOffset": 28392612,
+      "posCount": 37917,
+      "normOffset": 28544280,
+      "normCount": 37917,
+      "idxOffset": 28695948,
+      "idxCount": 62319,
+      "height": 0.8574
+    },
+    "padangusthasana": {
+      "posOffset": 28945224,
+      "posCount": 38505,
+      "normOffset": 29099244,
+      "normCount": 38505,
+      "idxOffset": 29253264,
+      "idxCount": 62832,
+      "height": 1.0087
+    },
+    "uttanasana": {
+      "posOffset": 29504592,
+      "posCount": 37302,
+      "normOffset": 29653800,
+      "normCount": 37302,
+      "idxOffset": 29803008,
+      "idxCount": 62391,
+      "height": 1.0011
+    },
+    "malasana": {
+      "posOffset": 30052572,
+      "posCount": 37737,
+      "normOffset": 30203520,
+      "normCount": 37737,
+      "idxOffset": 30354468,
+      "idxCount": 61941,
+      "height": 0.9187
+    },
+    "pasasana": {
+      "posOffset": 30602232,
+      "posCount": 37686,
+      "normOffset": 30752976,
+      "normCount": 37686,
+      "idxOffset": 30903720,
+      "idxCount": 61938,
+      "height": 0.807
+    },
+    "adho_mukha_svanasana": {
+      "posOffset": 31151472,
+      "posCount": 36951,
+      "normOffset": 31299276,
+      "normCount": 36951,
+      "idxOffset": 31447080,
+      "idxCount": 62169,
+      "height": 0.8229
+    },
+    "vasisthasana": {
+      "posOffset": 31695756,
+      "posCount": 37641,
+      "normOffset": 31846320,
+      "normCount": 37641,
+      "idxOffset": 31996884,
+      "idxCount": 62250,
+      "height": 1.384
+    },
+    "purvottanasana": {
+      "posOffset": 32245884,
+      "posCount": 38109,
+      "normOffset": 32398320,
+      "normCount": 38109,
+      "idxOffset": 32550756,
+      "idxCount": 62376,
+      "height": 0.7046
+    },
+    "marjaryasana": {
+      "posOffset": 32800260,
+      "posCount": 36918,
+      "normOffset": 32947932,
+      "normCount": 36918,
+      "idxOffset": 33095604,
+      "idxCount": 62169,
+      "height": 0.6508
+    },
+    "bitilasana": {
+      "posOffset": 33344280,
+      "posCount": 38226,
+      "normOffset": 33497184,
+      "normCount": 38226,
+      "idxOffset": 33650088,
+      "idxCount": 62244,
+      "height": 0.8013
+    },
+    "bujangasana": {
+      "posOffset": 33899064,
+      "posCount": 39234,
+      "normOffset": 34056000,
+      "normCount": 39234,
+      "idxOffset": 34212936,
+      "idxCount": 63171,
+      "height": 0.6808
+    },
+    "salabhasana": {
+      "posOffset": 34465620,
+      "posCount": 36918,
+      "normOffset": 34613292,
+      "normCount": 36918,
+      "idxOffset": 34760964,
+      "idxCount": 62172,
+      "height": 0.4182
+    },
+    "bhekasana": {
+      "posOffset": 35009652,
+      "posCount": 37677,
+      "normOffset": 35160360,
+      "normCount": 37677,
+      "idxOffset": 35311068,
+      "idxCount": 62079,
+      "height": 0.4434
+    },
+    "dhanurasana": {
+      "posOffset": 35559384,
+      "posCount": 36714,
+      "normOffset": 35706240,
+      "normCount": 36714,
+      "idxOffset": 35853096,
+      "idxCount": 61719,
+      "height": 0.7861
+    },
+    "urdhva_dhanurasana": {
+      "posOffset": 36099972,
+      "posCount": 37554,
+      "normOffset": 36250188,
+      "normCount": 37554,
+      "idxOffset": 36400404,
+      "idxCount": 62523,
+      "height": 0.8101
+    },
+    "kapotasana": {
+      "posOffset": 36650496,
+      "posCount": 37170,
+      "normOffset": 36799176,
+      "normCount": 37170,
+      "idxOffset": 36947856,
+      "idxCount": 62310,
+      "height": 0.5463
+    },
+    "setu_bandhasana": {
+      "posOffset": 37197096,
+      "posCount": 39090,
+      "normOffset": 37353456,
+      "normCount": 39090,
+      "idxOffset": 37509816,
+      "idxCount": 62400,
+      "height": 0.5545
+    },
+    "virasana": {
+      "posOffset": 37759416,
+      "posCount": 45924,
+      "normOffset": 37943112,
+      "normCount": 45924,
+      "idxOffset": 38126808,
+      "idxCount": 68397,
+      "height": 0.943
+    },
+    "supta_virasana": {
+      "posOffset": 38400396,
+      "posCount": 38136,
+      "normOffset": 38552940,
+      "normCount": 38136,
+      "idxOffset": 38705484,
+      "idxCount": 61878,
+      "height": 0.4417
+    },
+    "parighasana": {
+      "posOffset": 38952996,
+      "posCount": 37245,
+      "normOffset": 39101976,
+      "normCount": 37245,
+      "idxOffset": 39250956,
+      "idxCount": 62343,
+      "height": 1.2663
+    },
+    "navasana": {
+      "posOffset": 39500328,
+      "posCount": 36846,
+      "normOffset": 39647712,
+      "normCount": 36846,
+      "idxOffset": 39795096,
+      "idxCount": 61950,
+      "height": 0.8966
+    },
+    "bakasana": {
+      "posOffset": 40042896,
+      "posCount": 556251,
+      "normOffset": 42267900,
+      "normCount": 556251,
+      "idxOffset": 44492904,
+      "idxCount": 956217,
+      "height": 0.8497
+    },
+    "bhujapidasana": {
+      "posOffset": 48317772,
+      "posCount": 37350,
+      "normOffset": 48467172,
+      "normCount": 37350,
+      "idxOffset": 48616572,
+      "idxCount": 62271,
+      "height": 0.7461
+    },
+    "kukkutasana": {
+      "posOffset": 48865656,
+      "posCount": 36951,
+      "normOffset": 49013460,
+      "normCount": 36951,
+      "idxOffset": 49161264,
+      "idxCount": 62121,
+      "height": 0.7923
+    },
+    "lolasana": {
+      "posOffset": 49409748,
+      "posCount": 37791,
+      "normOffset": 49560912,
+      "normCount": 37791,
+      "idxOffset": 49712076,
+      "idxCount": 62397,
+      "height": 0.7161
+    },
+    "mayurasana": {
+      "posOffset": 49961664,
+      "posCount": 37656,
+      "normOffset": 50112288,
+      "normCount": 37656,
+      "idxOffset": 50262912,
+      "idxCount": 61980,
+      "height": 0.4274
+    },
+    "astavakrasana": {
+      "posOffset": 50510832,
+      "posCount": 37383,
+      "normOffset": 50660364,
+      "normCount": 37383,
+      "idxOffset": 50809896,
+      "idxCount": 62274,
+      "height": 0.4924
+    },
+    "tittibhasana": {
+      "posOffset": 51058992,
+      "posCount": 37845,
+      "normOffset": 51210372,
+      "normCount": 37845,
+      "idxOffset": 51361752,
+      "idxCount": 61794,
+      "height": 0.7324
+    },
+    "pincha_mayurasana": {
+      "posOffset": 51608928,
+      "posCount": 39876,
+      "normOffset": 51768432,
+      "normCount": 39876,
+      "idxOffset": 51927936,
+      "idxCount": 65319,
+      "height": 1.7664
+    },
+    "adho_mukha_vrksasana": {
+      "posOffset": 52189212,
+      "posCount": 38952,
+      "normOffset": 52345020,
+      "normCount": 38952,
+      "idxOffset": 52500828,
+      "idxCount": 62436,
+      "height": 2.0866
+    },
+    "dandasana": {
+      "posOffset": 52750572,
+      "posCount": 38250,
+      "normOffset": 52903572,
+      "normCount": 38250,
+      "idxOffset": 53056572,
+      "idxCount": 62082,
+      "height": 0.8672
+    },
+    "gomukhasana": {
+      "posOffset": 53304900,
+      "posCount": 36912,
+      "normOffset": 53452548,
+      "normCount": 36912,
+      "idxOffset": 53600196,
+      "idxCount": 62160,
+      "height": 0.936
+    },
+    "sukhasana": {
+      "posOffset": 53848836,
+      "posCount": 36879,
+      "normOffset": 53996352,
+      "normCount": 36879,
+      "idxOffset": 54143868,
+      "idxCount": 61965,
+      "height": 0.8208
+    },
+    "vajrasana": {
+      "posOffset": 54391728,
+      "posCount": 37584,
+      "normOffset": 54542064,
+      "normCount": 37584,
+      "idxOffset": 54692400,
+      "idxCount": 62328,
+      "height": 0.9194
+    },
+    "bharadvajasana": {
+      "posOffset": 54941712,
+      "posCount": 38745,
+      "normOffset": 55096692,
+      "normCount": 38745,
+      "idxOffset": 55251672,
+      "idxCount": 62811,
+      "height": 0.8783
+    },
+    "marichyasana": {
+      "posOffset": 55502916,
+      "posCount": 39897,
+      "normOffset": 55662504,
+      "normCount": 39897,
+      "idxOffset": 55822092,
+      "idxCount": 62799,
+      "height": 0.7851
+    },
+    "janu_sirsasana": {
+      "posOffset": 56073288,
+      "posCount": 37356,
+      "normOffset": 56222712,
+      "normCount": 37356,
+      "idxOffset": 56372136,
+      "idxCount": 62256,
+      "height": 0.3068
+    },
+    "krounchasana": {
+      "posOffset": 56621160,
+      "posCount": 37569,
+      "normOffset": 56771436,
+      "normCount": 37569,
+      "idxOffset": 56921712,
+      "idxCount": 62403,
+      "height": 1.0922
+    },
+    "paschimottanasana": {
+      "posOffset": 57171324,
+      "posCount": 45114,
+      "normOffset": 57351780,
+      "normCount": 45114,
+      "idxOffset": 57532236,
+      "idxCount": 70722,
+      "height": 0.9346
+    },
+    "upavistha_konasana": {
+      "posOffset": 57815124,
+      "posCount": 37044,
+      "normOffset": 57963300,
+      "normCount": 37044,
+      "idxOffset": 58111476,
+      "idxCount": 62232,
+      "height": 0.6841
+    },
+    "baddha_konasana": {
+      "posOffset": 58360404,
+      "posCount": 36918,
+      "normOffset": 58508076,
+      "normCount": 36918,
+      "idxOffset": 58655748,
+      "idxCount": 62166,
+      "height": 0.9205
+    },
+    "kurmasana": {
+      "posOffset": 58904412,
+      "posCount": 37302,
+      "normOffset": 59053620,
+      "normCount": 37302,
+      "idxOffset": 59202828,
+      "idxCount": 62349,
+      "height": 0.3141
+    },
+    "lotus": {
+      "posOffset": 59452224,
+      "posCount": 140814,
+      "normOffset": 60015480,
+      "normCount": 140814,
+      "idxOffset": 60578736,
+      "idxCount": 261960,
+      "height": 0.9797
+    },
+    "garbha_pindasana": {
+      "posOffset": 61626576,
+      "posCount": 37014,
+      "normOffset": 61774632,
+      "normCount": 37014,
+      "idxOffset": 61922688,
+      "idxCount": 62352,
+      "height": 0.6738
+    },
+    "matsyasana": {
+      "posOffset": 62172096,
+      "posCount": 37560,
+      "normOffset": 62322336,
+      "normCount": 37560,
+      "idxOffset": 62472576,
+      "idxCount": 62334,
+      "height": 0.8076
+    },
+    "supta_padangusthasana": {
+      "posOffset": 62721912,
+      "posCount": 38586,
+      "normOffset": 62876256,
+      "normCount": 38586,
+      "idxOffset": 63030600,
+      "idxCount": 62451,
+      "height": 0.3759
+    },
+    "anantasana": {
+      "posOffset": 63280404,
+      "posCount": 39264,
+      "normOffset": 63437460,
+      "normCount": 39264,
+      "idxOffset": 63594516,
+      "idxCount": 62658,
+      "height": 1.0133
+    },
+    "supta_baddha_konasana": {
+      "posOffset": 63845148,
+      "posCount": 37023,
+      "normOffset": 63993240,
+      "normCount": 37023,
+      "idxOffset": 64141332,
+      "idxCount": 62094,
+      "height": 0.4116
+    },
+    "viparita_karani": {
+      "posOffset": 64389708,
+      "posCount": 36975,
+      "normOffset": 64537608,
+      "normCount": 36975,
+      "idxOffset": 64685508,
+      "idxCount": 62133,
+      "height": 1.1659
+    },
+    "sirsasana": {
+      "posOffset": 64934040,
+      "posCount": 38013,
+      "normOffset": 65086092,
+      "normCount": 38013,
+      "idxOffset": 65238144,
+      "idxCount": 62481,
+      "height": 1.8329
+    },
+    "sarvangasana": {
+      "posOffset": 65488068,
+      "posCount": 36933,
+      "normOffset": 65635800,
+      "normCount": 36933,
+      "idxOffset": 65783532,
+      "idxCount": 62184,
+      "height": 1.6728
+    },
+    "halasana": {
+      "posOffset": 66032268,
+      "posCount": 36951,
+      "normOffset": 66180072,
+      "normCount": 36951,
+      "idxOffset": 66327876,
+      "idxCount": 62187,
+      "height": 0.63
+    },
+    "karnapidasana": {
+      "posOffset": 66576624,
+      "posCount": 37632,
+      "normOffset": 66727152,
+      "normCount": 37632,
+      "idxOffset": 66877680,
+      "idxCount": 62211,
+      "height": 0.5412
+    },
+    "savasana": {
+      "posOffset": 67126524,
+      "posCount": 38100,
+      "normOffset": 67278924,
+      "normCount": 38100,
+      "idxOffset": 67431324,
+      "idxCount": 61464,
+      "height": 0.202
+    }
+  }
+}

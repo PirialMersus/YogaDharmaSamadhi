@@ -1,0 +1,11 @@
+Model Information:
+* title:	Anna Reverse Wheel
+* source:	https://sketchfab.com/3d-models/anna-reverse-wheel-42e95654fc414f7fbe3b192c13dd2f7e
+* author:	CODAME (https://sketchfab.com/codame)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Anna Reverse Wheel" (https://sketchfab.com/3d-models/anna-reverse-wheel-42e95654fc414f7fbe3b192c13dd2f7e) by CODAME (https://sketchfab.com/codame) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
