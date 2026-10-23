@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from 'react'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 import type { PoseName } from '../geometry/poses'
+import { getAssetUrl } from '../utils/assetPath'
 
 interface YogaPropsComponentProps {
   currentPose: PoseName
@@ -219,7 +220,7 @@ export function YogaProps({
 
   useEffect(() => {
     let isMounted = true
-    fetch('/models/props_collection.json?t=' + Date.now(), { cache: 'no-store' })
+    fetch(getAssetUrl('/models/props_collection.json?t=' + Date.now()), { cache: 'no-store' })
       .then((res) => res.json())
       .then((data: PropsCollectionPayload) => {
         if (!isMounted) return

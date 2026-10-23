@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 import type { PoseName } from '../geometry/poses'
+import { getAssetUrl } from '../utils/assetPath'
 
 interface SolidHumanProps {
   currentPose: PoseName
@@ -80,8 +81,8 @@ export function SolidHuman({
     let isCancelled = false
 
     Promise.all([
-      fetch('/models/solid_sculpts.json?t=' + Date.now(), { cache: 'no-store' }).then((response) => response.json()),
-      fetch('/models/solid_sculpts.bin?t=' + Date.now(), { cache: 'no-store' }).then((response) => response.arrayBuffer()),
+      fetch(getAssetUrl('/models/solid_sculpts.json?t=' + Date.now()), { cache: 'no-store' }).then((response) => response.json()),
+      fetch(getAssetUrl('/models/solid_sculpts.bin?t=' + Date.now()), { cache: 'no-store' }).then((response) => response.arrayBuffer()),
     ])
       .then(([metadata, binaryBuffer]: [SculptMetadata, ArrayBuffer]) => {
         if (isCancelled) return

@@ -2,9 +2,9 @@ import type { Language, UiTranslations } from './types'
 
 export const UI_TRANSLATIONS: Record<Language, UiTranslations> = {
   ru: {
-    appTitle: 'YogaDharmaSamadhi — Практика, осознанность и высшее состояние',
+    appTitle: 'YogaDharmaSamadhi — Практика, осознанность, высшее состояние',
     headerBrand: 'YogaDharmaSamadhi',
-    headerTagline: 'Практика, осознанность и высшее состояние',
+    headerTagline: 'Практика, осознанность, высшее состояние',
     practiceTimelineTooltip: 'Шкала практики: клик для перехода к любой позе',
     previousPoseAria: 'Предыдущая поза',
     nextPoseAria: 'Следующая поза',

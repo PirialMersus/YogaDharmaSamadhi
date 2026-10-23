@@ -5,6 +5,7 @@ import { FontLoader, type Font } from 'three/examples/jsm/loaders/FontLoader.js'
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js'
 import { POSE_DESCRIPTIONS, type PoseAnnotationInfo } from '../data/poseDescriptions'
 import { POSE_CYCLE, type PoseName } from '../geometry/poses'
+import { getAssetUrl } from '../utils/assetPath'
 
 interface Pose3DAnnotationProps {
   currentPose: PoseName
@@ -125,7 +126,7 @@ export function Pose3DAnnotation({
   useEffect(() => {
     let isMounted = true
     const loader = new FontLoader()
-    loader.load('/fonts/Roboto_Regular.json', (font) => {
+    loader.load(getAssetUrl('/fonts/Roboto_Regular.json'), (font) => {
       if (!isMounted) return
       setLoadedFont(font)
     })

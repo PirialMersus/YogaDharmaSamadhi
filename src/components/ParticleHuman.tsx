@@ -3,6 +3,7 @@ import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 import { easeInOutCubic, createParticleTexture } from '../geometry/humanShapes'
 import { POSE_CYCLE, type PoseName } from '../geometry/poses'
+import { getAssetUrl } from '../utils/assetPath'
 
 interface ParticleHumanProps {
   currentPose: PoseName
@@ -55,8 +56,8 @@ export function ParticleHuman({
     let isMounted = true
 
     Promise.all([
-      fetch('/models/poses_baked_meta.json?t=' + Date.now(), { cache: 'no-store' }).then((response) => response.json()),
-      fetch('/models/poses_baked.bin?t=' + Date.now(), { cache: 'no-store' }).then((response) => response.arrayBuffer()),
+      fetch(getAssetUrl('/models/poses_baked_meta.json?t=' + Date.now()), { cache: 'no-store' }).then((response) => response.json()),
+      fetch(getAssetUrl('/models/poses_baked.bin?t=' + Date.now()), { cache: 'no-store' }).then((response) => response.arrayBuffer()),
     ])
       .then(([metaData, binaryBuffer]: [ParticleMetadata, ArrayBuffer]) => {
         if (!isMounted) return

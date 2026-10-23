@@ -1,6 +1,7 @@
 import { useRef, useMemo } from 'react'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
+import { getAssetUrl } from '../utils/assetPath'
 
 function createSunCoreTexture(): THREE.CanvasTexture {
   const canvasElement = document.createElement('canvas')
@@ -51,27 +52,27 @@ export function CosmicEnvironment() {
   const sunCoreSpriteRef = useRef<THREE.Sprite>(null)
 
   const earthDayTexture = useMemo(
-    () => new THREE.TextureLoader().load('/textures/planets/earth_day_4096.jpg'),
+    () => new THREE.TextureLoader().load(getAssetUrl('/textures/planets/earth_day_4096.jpg')),
     []
   )
   const earthNightTexture = useMemo(
-    () => new THREE.TextureLoader().load('/textures/planets/earth_night_4096.jpg'),
+    () => new THREE.TextureLoader().load(getAssetUrl('/textures/planets/earth_night_4096.jpg')),
     []
   )
   const earthSpecularTexture = useMemo(
-    () => new THREE.TextureLoader().load('/textures/planets/earth_specular_2048.jpg'),
+    () => new THREE.TextureLoader().load(getAssetUrl('/textures/planets/earth_specular_2048.jpg')),
     []
   )
   const earthCloudsTexture = useMemo(
-    () => new THREE.TextureLoader().load('/textures/planets/earth_clouds_1024.png'),
+    () => new THREE.TextureLoader().load(getAssetUrl('/textures/planets/earth_clouds_1024.png')),
     []
   )
   const moonTexture = useMemo(
-    () => new THREE.TextureLoader().load('/textures/planets/moon_1024.jpg'),
+    () => new THREE.TextureLoader().load(getAssetUrl('/textures/planets/moon_1024.jpg')),
     []
   )
   const sunRaysTexture = useMemo(
-    () => new THREE.TextureLoader().load('/textures/planets/lensflare0.png'),
+    () => new THREE.TextureLoader().load(getAssetUrl('/textures/planets/lensflare0.png')),
     []
   )
 

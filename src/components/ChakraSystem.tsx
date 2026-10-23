@@ -3,6 +3,7 @@ import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 import { easeInOutCubic } from '../geometry/humanShapes'
 import type { PoseName } from '../geometry/poses'
+import { getAssetUrl } from '../utils/assetPath'
 
 interface ChakraSystemProps {
   currentPose: PoseName
@@ -90,7 +91,7 @@ export function ChakraSystem({
 
   useEffect(() => {
     let isMounted = true
-    fetch('/models/chakras.json?v=2')
+    fetch(getAssetUrl('/models/chakras.json?v=2'))
       .then((response) => response.json())
       .then((data: ChakraMap) => {
         if (!isMounted) return
