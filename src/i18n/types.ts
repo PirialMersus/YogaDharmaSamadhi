@@ -29,4 +29,6 @@ export interface UiTranslations {
   physicalBenefitHeader: string
   mentalBenefitHeader: string
   poseNumberPrefix: string
+  expandDetails: string
+  collapseDetails: string
 }

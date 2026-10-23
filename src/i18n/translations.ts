@@ -28,6 +28,8 @@ export const UI_TRANSLATIONS: Record<Language, UiTranslations> = {
     physicalBenefitHeader: 'ТЕЛО И ОСАНКА',
     mentalBenefitHeader: 'НЕРВНАЯ СИСТЕМА И ФОКУС',
     poseNumberPrefix: '№ ',
+    expandDetails: 'Польза асаны',
+    collapseDetails: 'Свернуть',
   },
   uk: {
     appTitle: 'YogaDharmaSamadhi — Практика, усвідомленість та вищий стан',
@@ -56,6 +58,8 @@ export const UI_TRANSLATIONS: Record<Language, UiTranslations> = {
     physicalBenefitHeader: 'ТІЛО ТА ПОСТАВА',
     mentalBenefitHeader: 'НЕРВОВА СИСТЕМА ТА ФОКУС',
     poseNumberPrefix: '№ ',
+    expandDetails: 'Користь асани',
+    collapseDetails: 'Згорнути',
   },
   en: {
     appTitle: 'YogaDharmaSamadhi — Practice, mindfulness, and the supreme state',
@@ -84,5 +88,7 @@ export const UI_TRANSLATIONS: Record<Language, UiTranslations> = {
     physicalBenefitHeader: 'BODY & POSTURE',
     mentalBenefitHeader: 'NERVOUS SYSTEM & FOCUS',
     poseNumberPrefix: '#',
+    expandDetails: 'Pose benefits',
+    collapseDetails: 'Collapse',
   },
 }
