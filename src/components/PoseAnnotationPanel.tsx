@@ -6,6 +6,7 @@ import { useLanguage } from '../i18n/LanguageContext'
 interface PoseAnnotationPanelProps {
   currentPose: PoseName
   isTransitioning: boolean
+  isSceneReady?: boolean
 }
 
 interface AnimatedChar {
@@ -102,19 +103,20 @@ function buildWordList(
 export function PoseAnnotationPanel({
   currentPose,
   isTransitioning,
+  isSceneReady = true,
 }: PoseAnnotationPanelProps) {
   const { language, translations } = useLanguage()
   const [activePose, setActivePose] = useState<PoseName>(currentPose)
-  const [isVisible, setIsVisible] = useState(true)
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    if (isTransitioning) {
+    if (isTransitioning || !isSceneReady) {
       setIsVisible(false)
     } else {
       setActivePose(currentPose)
       setIsVisible(true)
     }
-  }, [isTransitioning, currentPose])
+  }, [isTransitioning, currentPose, isSceneReady])
 
   const activeDescription: PoseAnnotationInfo = useMemo(
     () => getLocalizedPoseDescription(activePose, language),

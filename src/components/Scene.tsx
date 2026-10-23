@@ -15,6 +15,7 @@ interface SceneProps {
   transitionProgress: number
   reducedMotion: boolean
   pixelRatio: number
+  onGeometriesReady?: () => void
 }
 
 export function Scene({
@@ -24,6 +25,7 @@ export function Scene({
   transitionProgress,
   reducedMotion,
   pixelRatio,
+  onGeometriesReady,
 }: SceneProps) {
   return (
     <Canvas
@@ -58,6 +60,7 @@ export function Scene({
         previousPose={previousPose}
         isTransitioning={isTransitioning}
         transitionProgress={transitionProgress}
+        onGeometriesReady={onGeometriesReady}
       />
 
       <YogaProps

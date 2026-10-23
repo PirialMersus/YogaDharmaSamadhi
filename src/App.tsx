@@ -24,8 +24,13 @@ function YogaPracticeExperience() {
   const [isTransitioning, setIsTransitioning] = useState(false)
   const [transitionProgress, setTransitionProgress] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
+  const [isSceneReady, setIsSceneReady] = useState(false)
   const [pixelRatio] = useState(() => getPixelRatio())
   const [reducedMotion] = useState(() => detectReducedMotion())
+
+  const handleSceneReady = useCallback(() => {
+    setIsSceneReady(true)
+  }, [])
 
   const currentPoseRef = useRef<PoseName>('tadasana')
   currentPoseRef.current = currentPose
@@ -91,7 +96,7 @@ function YogaPracticeExperience() {
   )
 
   useEffect(() => {
-    if (!isAutoPlaying) {
+    if (!isAutoPlaying || !isSceneReady) {
       if (autoPlayTimerRef.current !== null) {
         clearTimeout(autoPlayTimerRef.current)
         autoPlayTimerRef.current = null
@@ -114,7 +119,7 @@ function YogaPracticeExperience() {
         autoPlayTimerRef.current = null
       }
     }
-  }, [isAutoPlaying, startTransitionTo])
+  }, [isAutoPlaying, isSceneReady, startTransitionTo])
 
   useEffect(() => {
     return () => {
@@ -181,10 +186,12 @@ function YogaPracticeExperience() {
         transitionProgress={transitionProgress}
         reducedMotion={reducedMotion}
         pixelRatio={pixelRatio}
+        onGeometriesReady={handleSceneReady}
       />
       <PoseAnnotationPanel
         currentPose={currentPose}
         isTransitioning={isTransitioning}
+        isSceneReady={isSceneReady}
       />
       <Controls
         currentPose={currentPose}

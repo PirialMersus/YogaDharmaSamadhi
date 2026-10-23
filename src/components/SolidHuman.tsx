@@ -9,6 +9,7 @@ interface SolidHumanProps {
   previousPose: PoseName
   isTransitioning: boolean
   transitionProgress: number
+  onGeometriesReady?: () => void
 }
 
 interface PoseMetadataRecord {
@@ -70,6 +71,7 @@ export function SolidHuman({
   previousPose,
   isTransitioning,
   transitionProgress,
+  onGeometriesReady,
 }: SolidHumanProps) {
   const geometriesCacheReference = useRef<Map<PoseName, THREE.BufferGeometry>>(new Map())
   const [geometriesReady, setGeometriesReady] = useState(false)
@@ -133,6 +135,9 @@ export function SolidHuman({
 
         geometriesCacheReference.current = cacheMap
         setGeometriesReady(true)
+        if (onGeometriesReady) {
+          onGeometriesReady()
+        }
       })
       .catch((error) => {
         console.error('Error loading solid sculpts:', error)
