@@ -2,8 +2,8 @@ import type { Language, UiTranslations } from './types'
 
 export const UI_TRANSLATIONS: Record<Language, UiTranslations> = {
   ru: {
-    appTitle: 'YogaDharmaSamadhi — Практика, осознанность, высшее состояние',
-    headerBrand: 'YogaDharmaSamadhi',
+    appTitle: 'balance — Практика, осознанность, высшее состояние',
+    headerBrand: 'balance',
     headerTagline: 'Практика, осознанность, высшее состояние',
     practiceTimelineTooltip: 'Шкала практики: клик для перехода к любой позе',
     previousPoseAria: 'Предыдущая поза',
@@ -32,8 +32,8 @@ export const UI_TRANSLATIONS: Record<Language, UiTranslations> = {
     collapseDetails: 'Свернуть',
   },
   uk: {
-    appTitle: 'YogaDharmaSamadhi — Практика, усвідомленість та вищий стан',
-    headerBrand: 'YogaDharmaSamadhi',
+    appTitle: 'balance — Практика, усвідомленість та вищий стан',
+    headerBrand: 'balance',
     headerTagline: 'Практика, усвідомленість та вищий стан',
     practiceTimelineTooltip: 'Шкала практики: клік для переходу до будь-якої пози',
     previousPoseAria: 'Попередня поза',
@@ -62,8 +62,8 @@ export const UI_TRANSLATIONS: Record<Language, UiTranslations> = {
     collapseDetails: 'Згорнути',
   },
   en: {
-    appTitle: 'YogaDharmaSamadhi — Practice, mindfulness, and the supreme state',
-    headerBrand: 'YogaDharmaSamadhi',
+    appTitle: 'balance — Practice, mindfulness, and the supreme state',
+    headerBrand: 'balance',
     headerTagline: 'Practice, mindfulness, and the supreme state',
     practiceTimelineTooltip: 'Practice timeline: click to jump to any pose',
     previousPoseAria: 'Previous pose',
